@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>just PRACTICE</title>
+</head>
+<body>
+    <form autocomplete="on">
+        <label for="fname">FIRST NAME:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <label for="lname">LAST NAME</label><br>
+        <input type="text" id="lname" name="lname"><br>
+        <input type="reset" value="Reset">
+    </form>
+    <p style="color: black;">Below is an example of radio type form</p>
+    <p style="color: blueviolet;">Choose your favourite programming language</p>
+    <form>
+        <label for="html">HTML</label><br>
+        <input type="radio" id="html" name="fav_languge" value="HTML"><br>
+        <label for="javascript">JAVACRIPT</label><br>
+        <input type="radio" id="javascript" name="fav_languge" value="JAVACRIPT"><br>
+        <label for="java">JAVA</label><br>
+        <input type="radio" id="java" name="fav_languge" value="JAVA"><br>
+        <label for="python">PYTHON</label><br>
+        <input type="radio" id="python" name="fav_languge" value="PYTHON"><br>
+    </form>
+    <p>Below is an example of checkbox type form</p>
+    <P>CHOOSE the language you're most profficient in</P>
+    <form action>
+        <label for="language1">I am profficient in javascript</label><br>
+        <input type="checkbox" id="language1" name="language1" value="JAVACRIPT"><br>
+        <label for="language2">I am profficient in python</label><br>
+        <input type="checkbox" id="language2" name="language2" value="python"><br>
+        <label for="languge3">I am profficient in java</label><br>
+        <input type="checkbox" id="languge3" name="languge3" value="java"><br>
+        <label for="all">All of the above</label><br>
+        <input type="checkbox" id="all" name="all" value="all"><br><br>
+        <input type="submit" value="submit">
+    </form>
+    <p style="font-weight: bold; font-style: italic;">The SELECT element</p><br><br>
+    <form>
+        <label for="cars">Choose a car</label>
+        <select id="cars" name="cars" size="2">
+            <option value="Volvo">VOLVO</option>
+            <option value="sedan">SEDAN</option>
+            <option value="audi" selected>Audi</option>
+            <option value="volkswagen">volkswagen</option>
+            <option value="saab">saab</option>
+        </select>
+    </form>
+    <p>The text area element is used to declare a multi-line input</p>
+    <p>An example of a textarea element being used</p>
+    <form>
+        <textarea name="message" rows="10" cols="30"></textarea>
+    </form>
+    <p>The fieldset and legemd elements</p>
+
+    <form>
+        <fieldset>
+          <legend>Personalia:</legend>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" value="John"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" value="Doe"><br><br>
+          <input type="submit" value="Submit">
+        </fieldset>
+      </form>
+
+      <p>The datalist element</p>
+
+      <form>
+        <input list="browsers">
+        <datalist id="browsers">
+          <option value="Edge">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+      </form>
+
+      <p>The password input type where the characters are masked </p>
+
+      <form>
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="pwd">Password:</label><br>
+        <input type="password" id="pwd" name="pwd">
+      </form>
+
+      <p>The date input type to enter data that contain date</p>
+
+      <form>
+        <label for="birthday">Birthday:</label>
+        <input type="date" id="birthday" name="birthday">
+      </form>
+
+      <h2>The datetime-local input type which indicates date and time</h2>
+
+      <form>
+        <label for="birthdaytime">Birthday (date and time):</label>
+        <input type="datetime-local" id="birthdaytime" name="birthdaytime">
+      </form>
+
+      <h2>The email input type for email input</h2>
+      <form>
+        <label for="email">Enter your email:</label>
+        <input type="email" id="email" name="email">
+      </form>
+
+      <h2>Display an Image as the Submit button</h2>
+
+<form action="/action_page.php">
+  <label for="fname">First name: </label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <label for="lname">Last name: </label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+</form>
+<h1>File upload</h1>
+
+<p>Show a file-select field which allows a file to be chosen for upload:</p>
+<form action="/action_page.php">
+  <label for="myfile">Select a file:</label>
+  <input type="file" id="myfile" name="myfile"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<h1>A Hidden Field (look in source code)</h1>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label>
+  <input type="text" id="fname" name="fname"><br><br>
+  <input type="hidden" id="custId" name="custId" value="3487">
+  <input type="submit" value="Submit">
+</form>
+
+<p><strong>Note:</strong> The hidden field is not shown to the user, but the data is sent when the form is submitted.</p>
+</body>
+</html>
